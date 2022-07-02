@@ -22,4 +22,58 @@ sudo lsof /var/lib/dpkg/lock
 sudo lsof /var/lib/apt/lists/lock
 sudo lsof /var/cache/apt/archives/lock
 
+====================================================================================================================
+
+pkill -9 process_id
+
+sudo -s (or) sudo su
+
+apt-get update
+
+apt-cache search net-tools
+apt-get install net-tools
+netstat -ntlp
+
+apt-cache search qemu-kv
+apt-get install qemu-kvm
+
+apt-get install qemu-kvm virt-manager bridge-utils qemu-system virt-manager
+
+nano /etc/libvirt/libvirtd.conf
+[sudo apt-get install nano] --IF NANO COMMAND NOT FOUND
+
+##COMMENT EVERYTHING
+##COPY PASTE BELOW LINES
+
+listen_addr = "0.0.0.0"
+unix_sock_group = "libvirt"
+unix_sock_ro_perms = "0777"
+unix_sock_rw_perms = "0777"
+unix_sock_dir = "/var/run/libvirt"
+auth_unix_ro = "none"
+auth_unix_rw = "none"
+
+/etc/init.d/libvirtd restart
+/etc/init.d/libvirtd status
+
+[INSTALLATION LINK OF GUEST OS]
+[https://www.google.com/url?hl=en&q=https://download.cirros-cloud.net/0.3.6/cirros-0.3.6-i386-disk.img&sa=D&source=meet&ust=1652599184463660&usg=AOvVaw1a0wlQwjEq69zJDkJ4wHUx]
+
+
+virsh list
+
+virt-manager
+
+
+
+[BROWSE AND SELECT GUEST OS LOCATION]
+
+virsh list
+
+__IF ERROR_
+
+sudo lsof /var/lib/dpkg/lock
+sudo lsof /var/lib/apt/lists/lock
+sudo lsof /var/cache/apt/archives/lock
+
 pkill -9 process_id
