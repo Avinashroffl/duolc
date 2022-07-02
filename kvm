@@ -17,3 +17,9 @@ auth_unix_rw = "none"
 
 Virsh list
 /etc/init.d/libvirtd status
+
+sudo lsof /var/lib/dpkg/lock
+sudo lsof /var/lib/apt/lists/lock
+sudo lsof /var/cache/apt/archives/lock
+
+pkill -9 process_id
