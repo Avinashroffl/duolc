@@ -1,3 +1,4 @@
+eclipse 2019.03==> tomcat 9 ==>soap ==> java jdk1.8 jre 1.8
 apt-get install qemu-kvm
 libvirt-bin
 bridge-utils
